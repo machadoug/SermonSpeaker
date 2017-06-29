@@ -35,8 +35,6 @@ class SermonspeakerViewSpeaker extends JViewLegacy
 			$app->redirect(JRoute::_('index.php?view=speakers'), JText::_('JGLOBAL_RESOURCE_NOT_FOUND'), 'error');
 		}
 
-		require_once JPATH_COMPONENT . '/helpers/player.php';
-
 		// Get data from the model
 		$state         = $this->get('State');
 		$this->item    = $this->get('Item');
